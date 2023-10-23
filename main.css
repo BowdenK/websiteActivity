@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(.25turn, #1F2421 80%, #1BEE7D44);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family:  Helvetica, sans-serif, Arial;
+    font-size: 20px;
+    color: #E9E6FF;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.sidenav {
+    width: 130px;
+    height: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 130px;
+    font-weight:bolder;
+}
+
+a {
+    text-decoration: none;
+    padding: 16px 0px;
+}
+
+a:hover {
+    background-color: orange;
+}
+
+h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #1BEE7D;
+
+    position: fixed;
+    /* z-index: 1;
+    width: 100%;
+    font-stretch: extra-expanded; */
+}
+
+div {
+    background-color: #7286A022;
+    /* last 2 digits are opactity 
+    display
+    margin*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+.animBar {
+    width: 65%;
+    height: 6px;
+    position: relative;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+
+    animation: lightSlide 2s ease-in-out infinite;
+}
+
+@keyframes lightSlide{
+    0% {background-color:  #1BEE7D;}
+	50% {background-color:  #d6f7e3;}
+    100% {background-color:  #1BEE7D;}
+}
