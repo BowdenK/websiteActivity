@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(.25turn, #1F2421 85%, #1BEE7Ddd);
+    background: linear-gradient(90deg, #1F2421 85%, #1BEE7Ddd);
     background-repeat: no-repeat;
     background-attachment: fixed;
 
@@ -7,6 +7,16 @@ body {
     font-size: 20px;
     color: #E9E6FF;
     font-style: normal;
+}
+
+.g2 {
+    background: linear-gradient(135deg, #eceddc 25%, transparent 25%),
+          linear-gradient(225deg, #eceddc 25%, transparent 25%),
+          linear-gradient(315deg, #eceddc 25%, transparent 25%),
+          linear-gradient(45deg, #eceddc 25%, transparent 25%);
+        background-size: 20px 20px;
+        background-color: #1BEE7D;
+        /* this creates a small diamond effect and repeats */
 }
 
 .container {
@@ -41,11 +51,12 @@ a:hover {
 h1 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #1BEE7D;
-
     position: fixed;
-    /* z-index: 1;
-    width: 100%;
-    font-stretch: extra-expanded; */
+}
+
+h3 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #F0A202;
 }
 
 div {
