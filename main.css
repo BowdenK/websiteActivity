@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(.25turn, #1F2421 80%, #1BEE7D44);
+    background: linear-gradient(.25turn, #1F2421 85%, #1BEE7Ddd);
     background-repeat: no-repeat;
     background-attachment: fixed;
 
@@ -13,6 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items:center;
+    align-content: center;
 }
 
 .sidenav {
@@ -25,12 +26,16 @@ body {
 }
 
 a {
+    color:#1BEE7D;
     text-decoration: none;
     padding: 16px 0px;
 }
 
 a:hover {
-    background-color: orange;
+    color: #E9E6FF;
+    background-color: #1BEE7D;
+    width: 80px;
+    text-align: center;
 }
 
 h1 {
