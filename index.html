@@ -4,27 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+    <title>Kev Bowden - HOME</title>
 </head>
+<header>
+    <div class="g2"><br><br></div></header>
 <body>    
     <h1>HOME</h1>
     <div class="sidenav">
         <div>
             <nav class="container">
-                <a href="">HOME</a>
-                <a href=".\blog.html">BLOG</a>
-                <a href=".\about.html">ABOUT</a>
+                <a class="a2" href="">HOME</a>
+                <a class="a2" href=".\blog.html">BLOG</a>
+                <a class="a2" href=".\about.html">ABOUT</a>
             </nav>
         </div>
     </div>
-    <div class="g2"><br><br></div>
+    
     <div>
         <img src=".\images\placeHolder.jpg" alt="Coming Soon">
     </div>
     <img src="" alt="">
     <div>
-        <h3>Section 1</h3>
-        <p>paragraph on why joined course</p>
+        <h3>Articles</h3>
+        <h3>A Code Review</h3>
+        <p>
+            <p><h4>Challenge name:</h4> RGB To Hex Conversion</p>
+
+            <p><h4>Description:</h4> To create a javascript function, which when given an rgb colour code, returns it's Hexadecimal equivalent.</p>
+
+            <p><h4>My Solution:</h4></p>
+<pre>                
+    function rgb(r, g, b) {
+        let ref = [0,1,2,3,4,5,6,7,8,9,
+                  'A','B','C','D','E','F']
+        let arr = []
+        
+        //Error checking
+        
+        if(r > 255){r = 255}
+        if(g > 255){g = 255}
+        if(b > 255){b = 255}
+        
+        if(r < 0){r = 0}
+        if(g < 0){g = 0}
+        if(b < 0){b = 0}
+        
+        //   divide by 16
+        //   multiply remained by 16
+        
+        let r1 = Math.floor(r / 16)
+        let r2 = ((r/16)-r1)*16
+        arr.push(ref[r1]);
+        arr.push(ref[Math.round(r2)]);
+        
+        let g1 = Math.floor(g / 16)
+        let g2 = ((g/16)-g1)*16
+        arr.push(ref[g1]);
+        arr.push(ref[Math.round(g2)]);
+        
+        let b1 = Math.floor(b / 16)
+        let b2 = ((b/16)-b1)*16
+        arr.push(ref[b1]);
+        arr.push(ref[Math.round(b2)]);
+        
+        //return "FFFFFF";
+
+        return arr.join("")
+    }
+        
+</pre>
+        
+        <p><h4>My Thought Process and Work Flow:</h4></p>
+        
+        <p>The initial part of the solution focuses upon having the correct rgb values in order to continue.  I tackled this using 'if' statements to make sure the values were within bounds.</p>
+
+        <p>To calculate the hex from the rgb, I researched a formula which involved dividing the rgb by 16 (base16) to give a new value.  Then, handle the remainder seperately.  
+        I then declared an array with all base16 values; of which, the corresponding element can be called using the new calculated value. This can then be added to a new array to hold the answer.
+        When all rgb values are converted, the answer array is condensed in to a string and BINGO.</p>
+
+            <p><h4>My analysis:</h4></p>
+            <p>As a first attempt I was happy to get a solution for the challenge. However, I knew while writing this code that improvements could be made. 
+            Most obvious to me, would be to create smaller internal functions which would handle error checking and conversion calculations.  This would replace the repeated code I used to handle each rgb value individually; and instead, would call the internal functions 3 times. 
+            I am also aware that there may be a better way to handle the error checking of values which may be outside of bounds.  I believe there is a Math function which can do excatly this using a min/max.</p>
+
+            <p>Looking through previous solutions to the challenge, it appears there is a much easier way of achieving the task using the object method '.toString(16)'.
+            This method, with the '16' argument, will convert a number into a hexadecimal.</p>
+
+            <p>Overall, I'm quite proud of finding a solution to this one, may be even more so, without using the toString method.
+            However, I'll probably be using it from now on.</p>
+        </p>
+    </div>
+    <div>
         <ol>
             <li>insert image</li>
             <li>insert header</li>
@@ -48,6 +118,11 @@
     <footer>
         <img src="https://www.codewars.com/users/bowdenk/badges/small" alt="CodeWars profile">
         <div class="animBar"></div>
+        <div class="footContainer">
+            <a href="https://www.google.com/">GOOGLE</a>
+            <a href="https://www.w3schools.com/">W3Schools</a>
+            <a href="https://www.codewars.com/">Codewars</a>
+        </div>
     </footer>
 </body>
 </html>
