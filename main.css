@@ -1,11 +1,11 @@
 body {
-    background: linear-gradient(90deg, #1F2421 85%, #39dd85);
+    background: linear-gradient(90deg, #121413 85%, #149c56);
     background-repeat: no-repeat;
     background-attachment: fixed;
 
     font-family:  Helvetica, sans-serif, Arial;
     font-size: 20px;
-    color: #E9E6FF;
+    color: #bfb8f8;
     font-style: normal;
 }
 
@@ -102,6 +102,7 @@ img {
 }
 
 .animBar {
+    /* A small animated bar which changes colour */
     width: 65%;
     height: 6px;
     position: relative;
