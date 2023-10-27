@@ -44,7 +44,7 @@ body {
     height: 165px;
     position: fixed;
     z-index: 1;
-    top: 130px;
+    top: 190px;
     background: none;
 }
 
@@ -60,6 +60,14 @@ body {
     margin: 5px;
 }
 
+.narrow{
+    border-radius: 8px;
+    opacity: 0.7;
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+}
+
 .a2:hover {
     color: #E9E6FF;
     background-color: #1BEE7D;
@@ -72,6 +80,9 @@ h1 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #1BEE7D;
     position: fixed;
+    left: 20px;
+    top: 80px;
+    font-size: 70px;
 }
 
 h2 {
@@ -97,6 +108,7 @@ div {
     display: block;
     margin: 25px auto;
     width: 65%;
+    padding: 10px;
 }
 
 .img2 {
