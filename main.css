@@ -16,7 +16,12 @@ body {
           linear-gradient(45deg, #1BEE7D 25%, transparent 25%);
     background-size: 30px 30px;
     background-color: #7286A0;
+    border-radius: 15px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     /* this creates a small diamond effect and repeats */
+    /* gradient banner */
 }
 
 .container {
@@ -62,6 +67,12 @@ h1 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #1BEE7D;
     position: fixed;
+}
+
+h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #F0A202;
+    font-size: 40px;
 }
 
 h3 {
